@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIVE SCORE BOARD</title>
+</head>
+<body>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Freehand:regular" rel="stylesheet" />
+
+<div class="container">
+    <div class="sub-container responsive-sub-container">
+        <div>
+            <h3>INSTITUTE 1</h3>
+            <div class="score-board">
+                <p id="home-container">0</p>            
+            </div>
+        </div>
+        <div class="button-group">
+            <button class="btn" onclick="homeIncrement(1)">+1</button>
+            <button class="btn" onclick="homeIncrement(2)">+2</button>
+            <button class="btn" onclick="homeIncrement(3)">+3</button>
+        </div>
+        <button class="clear-btn responsive-clear-btn" onclick = "clearhomeEl()">CLEAR</button>
+    </div>
+    <div class="sub-container">
+        <div>
+            <h3>INSTITUTE 2</h3>
+            <div class="score-board">
+                <p id="guest-container">0</p>            
+            </div>
+        </div>
+        <div class="button-group">
+            <button class="btn" onclick="guestIncrement(1)">+1</button>
+            <button class="btn" onclick="guestIncrement(2)">+2</button>
+            <button class="btn" onclick="guestIncrement(3)">+3</button>
+        </div>
+        <button class="clear-btn responsive-clear-btn" onclick = "clearguestEl()">CLEAR</button>
+    </div>
+</div>
+<script src="add.js"></script>
+    
+</body>
+</html>
